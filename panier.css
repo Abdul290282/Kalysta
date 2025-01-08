@@ -1,0 +1,74 @@
+/* Pour éviter les marges par défaut et avoir fond noir complet */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;   /* Fond noir */
+    color: #9400D3;           /* Texte violet futuriste */
+    font-family: Arial, sans-serif;
+    min-height: 100vh;        /* S’étire sur toute la hauteur */
+  }
+  
+  /* Liens / bouton "Back to Home" */
+  .back-to-home {
+    display: inline-block;
+    margin: 10px;
+    color: #9400D3;
+    text-decoration: none;
+  }
+  .back-to-home:hover {
+    text-decoration: underline;
+  }
+  
+  /* Titre */
+  h1 {
+    margin: 20px;
+    font-size: 2rem;
+    color: #9400D3;
+  }
+  
+  /* Conteneur principal du panier */
+  .cart-container {
+    padding: 20px;
+    /* Le body est déjà en #000, donc inutile de remettre un background-color */
+  }
+  
+  /* Cart items */
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #9400D3;
+  }
+  
+  /* Image des produits */
+  .cart-item img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  /* Zone du total */
+  .cart-total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Bouton "Passer au paiement" */
+  #checkout-button {
+    background-color: #9400D3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  #checkout-button:hover {
+    background-color: #BA55D3;
+  }
+  

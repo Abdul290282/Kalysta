@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Panier</title>
+  <link rel="stylesheet" href="panier.css">
+</head>
+<body>
+  <header>
+    <a href="kalysta_new_version.html" class="back-to-home">Back to Home</a>
+    <h1>Votre Panier</h1>
+  </header>
+  
+  <main class="cart-container">
+    <div id="cart-items"></div>
+    <div class="cart-total">
+      <h3>Total : <span id="cart-total-price">0</span> €</h3>
+      <button id="checkout-button">Passer au paiement</button>
+      <script>
+        const checkoutBtn = document.getElementById('checkout-button');
+        checkoutBtn.addEventListener('click', () => {
+          // Quand on clique, on ouvre la page de paiement (checkout.html)
+          window.location.href = 'checkout.html';
+        });
+      </script>
+    </div>
+  </main>
+  <!-- Dans ta navbar, par ex. -->
+<a href="cart.html" class="icon-action">
+    <i class="fas fa-shopping-cart"></i>
+    <!-- Important : l'ID cart-count -->
+    <span id="cart-count">0</span>
+  </a>
+  
+
+  <!-- Script du panier -->
+  <script src="panier.js"></script>
+  <script>
+    // Quand la page cart.html se charge, on relit le panier et on l’affiche
+    document.addEventListener("DOMContentLoaded", () => {
+      window.cart = JSON.parse(localStorage.getItem('cart')) || [];
+      updateCartCount();    // si on veut afficher un compteur ici aussi, il faut un <span id="cart-count"> (optionnel)
+      displayCartItems();   // Affiche le contenu du panier
+    });
+  </script>
+</body>
+</html>

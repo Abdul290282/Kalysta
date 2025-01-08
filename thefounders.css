@@ -1,0 +1,111 @@
+/* Empêche les marges par défaut et règle le fond noir, etc. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000;    /* Fond noir */
+    color: #BA55D3;           /* Texte violet clair */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Bouton "Back to Home" */
+  .back-to-home {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #9400D3;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #9400D3;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .back-to-home:hover {
+    background-color: #9400D3; 
+    color: #fff;
+  }
+  
+  /* Titre principal */
+  header h1 {
+    font-size: 2.5rem;
+    color: #9400D3;
+    text-shadow: 0 0 8px #9400D3, 0 0 15px #8A2BE2;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Conteneur global (affiche les fondateurs sous forme de cartes) */
+  .founders-container {
+    display: flex;
+    flex-wrap: wrap;          /* Passe sur plusieurs lignes si pas assez de place */
+    gap: 20px;
+    justify-content: center;  /* Centre les cartes */
+  }
+  
+  /* Carte de chaque fondateur */
+  .founder-card {
+    background-color: #111;  
+    border: 1px solid #9400D3;
+    border-radius: 10px;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;      /* Image à gauche, texte à droite */
+    gap: 20px;
+    align-items: flex-start;  /* Aligne le haut de l'image avec le haut du texte */
+    margin: 0 auto;           /* Centre la carte horizontalement */
+  }
+  
+  /* Photo du fondateur */
+  /* On fixe une *largeur max* en px, et un *height: auto*, 
+     pour conserver le ratio et éviter l’aplatissement */
+  .founder-photo {
+    max-width: 180px;      /* Ajuste la taille selon ton goût */
+    height: auto;          
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(148, 0, 211, 0.5);
+    object-fit: cover;     /* S'assure de bien remplir la zone, 
+                              éventuellement "contain" si tu préfères des marges */
+  }
+  
+  /* Bloc d'infos texte */
+  .founder-info {
+    flex: 1;               /* Le texte prend le reste de la place */
+  }
+  
+  .founder-info h2 {
+    color: #f0f;           /* Ou #9400D3 si tu préfères */
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    text-shadow: 0 0 8px #BA55D3;
+  }
+  
+  .founder-info p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+/* Conteneur pour l'image + "Click on the image" */
+.founder-image-wrapper {
+    display: flex;
+    flex-direction: column; /* Image au-dessus, phrase en dessous */
+    align-items: center;    /* Centre horizontalement */
+    margin-right: 20px;     /* Espace entre la zone image et le texte */
+  }
+  
+  /* Petite phrase sous l'image */
+  .click-hint {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #ccc;         /* Un gris clair par ex. */
+    font-style: italic;  /* Optionnel, pour différencier le style */
+  }
+  .founder-photo {
+    max-width: 180px; 
+    height: auto;
+    object-fit: cover; /* ou contain */
+    
+  }

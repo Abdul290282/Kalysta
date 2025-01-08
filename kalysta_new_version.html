@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KALYSTA ACTUATION</title>
+ 
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/k_logo.png" type="image/png" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHq6K3ePTmQG1Yq6s4Cw5dVJ7pBc1+..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Barre jaune (très fine) en haut -->
+  <div class="top-bar"></div>
+
+<!-- En-tête principal -->
+<header class="header">
+  <!-- Hamburger -->
+  <button class="hamburger" id="hamburger-btn" aria-label="Ouvrir le menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Logo KALYSTA -->
+  <div class="brand-logo">
+    <img src="images/kalysta_logo.jpg" alt="KALYSTA - High Performance Motion" />
+  </div>
+
+  <!-- Menu horizontal -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="industries.html">INDUSTRIES</a></li>
+      <li><a href="applications.html">APPLICATIONS</a></li>
+      <li><a href="career.html">CAREER</a></li>
+    </ul>
+  </nav>
+
+  <!-- Notre conteneur "visitor-counter" -->
+  <div class="visitor-counter">
+    <!-- Icône Globe Font Awesome (ou remplacer par ton image) -->
+    <i class="fas fa-globe"></i>
+    <!-- Le compteur qui s'incrémente de 0 à 2550 -->
+    <span id="peopleCount">0</span>
+    <!-- Le texte explicatif -->
+    <span class="counter-label">Number of people who have accessed the site</span>
+  </div>
+
+  <!-- Icônes à droite -->
+  <div class="header-actions">
+    <!-- Autres icônes ou liens (CONTACT, LANGUAGE, etc.) -->
+
+  <!-- Panier -->
+  <a href="cart.html" class="icon-action">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cart-count">0</span>
+  </a>
+  
+    <!-- Nouveau bloc SEARCH -->
+    <div class="search-wrapper">
+      <a href="#" class="icon-action" id="search-toggle">
+        <i class="fas fa-search"></i>
+        <span>SEARCH</span>
+      </a>
+  
+      <!-- Le champ + bouton (caché par défaut, qu’on affiche en JS) -->
+      <div class="search-box" id="search-box" style="display: none;">
+        <input type="text" id="searchInput" placeholder="Type here..." />
+        <button id="searchBtn">Go</button>
+      </div>
+    </div>
+  </div>
+  
+    <a href="contact.html" class="icon-action">
+      <i class="fas fa-envelope"></i>
+      <span>CONTACT</span>
+    </a>
+    <a href="#" class="icon-action language-selector">
+      <i class="fas fa-globe"></i>
+      <select id="language-dropdown">
+        <option value="en">EN</option>
+        <option value="fr">FR</option>
+        <option value="ar">AR</option>
+      </select>
+    </a>
+  </div>
+</header>
+
+
+  <!-- NOUVELLE BARRE JAUNE -->
+  <div class="yellow-line"></div>
+
+  <!-- Vidéo de fond -->
+  <main class="main-content">
+    <video autoplay muted loop playsinline id="background-video">
+      <source src="videos/background.mp4" type="video/mp4">
+      <source src="videos/background.webm" type="video/webm">
+      <source src="videos/background.ogv" type="video/ogg">
+      Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+  </main>
+
+  <!-- MENU LATÉRAL -->
+  <div class="side-menu" id="side-menu">
+    <button class="close-btn" id="close-btn" aria-label="Fermer le menu">&times;</button>
+    <div class="menu-logo">
+      <img src="images/kalysta_logo.jpg" alt="KALYSTA" />
+    </div>
+    <nav class="menu-nav">
+      <ul>
+        <li><a href="products.html" id="products-link">Products</a></li>
+        <li><a href="solutions.html" id="solutions-link">Solutions</a></li>
+        <li><a href="thefounders.html">The Founders</a></li>
+        <li>
+          <a 
+            href="https://www.lesechos.fr/idees-debats/sciences-prospective/des-robots-plus-legers-mais-plus-forts-1988964" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            News & Media
+          </a>
+        </li>
+        
+        <li><a href="about.html">About KALYSTA</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+  </div>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cookie Banner Example</title>
+    <link rel="stylesheet" href="cookie-banner.css">
+  </head>
+  <body>
+  
+    <!-- Contenu principal du site -->
+    <h1>Welcome to My Website</h1>
+    <p>This is the main content of the page...</p>
+  
+    <!-- Bannière cookies (cachée en JS si déjà accepté/refusé) -->
+    <div id="cookie-banner" class="cookie-banner">
+      <h2>Your Cookie Preferences</h2>
+      <p>
+        Our website uses necessary cookies for optimal performance, analytics, 
+        and secure transactions. By refusing these trackers via the "Refuse" 
+        button, non-essential or advertising cookies will not be deposited.
+      </p>
+      <p>
+        <strong>Note:</strong> This is just a training example. No real cookies are set.
+      </p>
+      <div class="cookie-buttons">
+        <button id="cookie-refuse">Refuse</button>
+        <button id="cookie-accept">Accept</button>
+      </div>
+    </div>
+  
+    <script src="cookie-banner.js"></script>
+  </body>
+  </html>
+  <audio autoplay loop>
+    <source src="videos/robot-music.mp3" type="audio/mpeg">
+    <source src="videos/robot-music.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+  
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

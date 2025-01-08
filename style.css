@@ -1,0 +1,313 @@
+/* Réinitialisation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fond global noir */
+body {
+  background-color: #000; /* Fond noir */
+  color: #9400D3; /* Texte violet futuriste */
+}
+
+/* Barre jaune en haut */
+.top-bar, .yellow-line {
+  width: 100%;
+  height: 8px;
+  background-color: #ffcf00;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #000; /* Fond noir */
+}
+
+.brand-logo img {
+  height: 50px; /* Taille ajustée */
+  width: auto;
+}
+
+/* Hamburger */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #9400D3; /* Barres violettes */
+  margin: 4px 0;
+}
+
+/* Navigation principale */
+.main-nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #9400D3; /* Texte violet */
+  font-size: 14px;
+  text-shadow: 0 0 5px #BA55D3, 0 0 10px #8A2BE2; /* Brillance légère */
+}
+
+.header-actions {
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+}
+
+.icon-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #9400D3; /* Texte violet */
+  font-size: 14px;
+  text-shadow: 0 0 5px #BA55D3, 0 0 10px #8A2BE2; /* Effet futuriste */
+}
+
+/* Vidéo */
+#background-video {
+  width: 100%;
+  height: calc(100vh - 16px); /* Hauteur entre les barres jaunes */
+  object-fit: cover;
+}
+
+/* Menu latéral */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Caché par défaut */
+  width: 300px;
+  height: 100%;
+  background-color: #000; /* Fond noir */
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+.side-menu.open {
+  left: 0; /* Menu visible */
+}
+
+.close-btn {
+  color: #9400D3; /* Texte violet futuriste */
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-shadow: 0 0 5px #BA55D3, 0 0 10px #8A2BE2;
+}
+
+/* Logo dans le menu latéral */
+.menu-logo img {
+  height: 40px; /* Taille réduite */
+  width: auto;
+  margin: 10px auto; /* Centrer et ajouter un espacement */
+  display: block;
+}
+/* Menu latéral */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Caché par défaut */
+  width: 300px;
+  height: 100%;
+  background-color: #000; /* Fond noir */
+  z-index: 1000;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrer les éléments horizontalement */
+  padding: 20px;
+}
+
+.side-menu.open {
+  left: 0; /* Menu visible */
+}
+
+/* Bouton de fermeture */
+.close-btn {
+  color: #9400D3; /* Texte violet futuriste */
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px; /* Espacement sous le bouton de fermeture */
+  text-shadow: 0 0 5px #BA55D3, 0 0 10px #8A2BE2;
+}
+
+/* Logo dans le menu latéral */
+.menu-logo img {
+  height: 40px; /* Taille réduite */
+  width: auto;
+  margin: 10px 0; /* Espacement autour du logo */
+}
+
+/* Liens dans le menu latéral */
+.menu-nav {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.menu-nav li {
+  margin: 15px 0; /* Espacement vertical entre les liens */
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: #9400D3; /* Texte violet */
+  font-size: 18px;
+  text-align: center; /* Centrer le texte */
+  text-shadow: 0 0 5px #BA55D3, 0 0 10px #8A2BE2; /* Effet lumineux */
+  transition: color 0.3s ease;
+}
+
+.menu-nav a:hover {
+  color: #BA55D3; /* Violet plus clair au survol */
+}
+/* Panier dans la barre de navigation */
+.header-actions .icon-action {
+  position: relative;
+  margin-left: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.header-actions .icon-action #cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: orange;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+
+/* Bouton Acheter */
+.buy-button {
+  background-color: #9400D3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.buy-button:hover {
+  background-color: #BA55D3;
+}
+body[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+.language-selector {
+  display: flex;
+  align-items: center;
+  color: #9400D3; /* Violet futuriste */
+}
+
+.language-selector select {
+  background: transparent;
+  color: #9400D3; /* Texte violet */
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.language-selector select:focus {
+  outline: none;
+}
+
+.language-selector select option {
+  background: #000; /* Fond noir */
+  color: #fff; /* Texte blanc */
+}
+
+body[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+/* Conteneur global du compteur */
+.visitor-counter {
+  display: flex; 
+  align-items: center;
+  background-color: #fff;     /* Fond blanc */
+  border: 2px solid #9400D3;  /* Bordure violette (option) */
+  border-radius: 5px;         /* Coins arrondis */
+  padding: 5px 10px;          /* Marge interne */
+  margin: 0 20px;             /* Espace horizontal, par ex. */
+}
+
+/* Icône Font Awesome ou l'image de la Terre */
+.visitor-counter i.fa-globe {
+  color: #9400D3;  /* Un violet futuriste */
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+/* Si tu utilises plutôt une image, style par exemple : */
+/*
+.earth-icon {
+  width: 24px;
+  height: auto;
+  margin-right: 8px;
+}
+*/
+
+/* Le nombre */
+#peopleCount {
+  font-weight: bold;
+  color: #9400D3;      /* Texte violet pour le numéro */
+  font-size: 18px;     /* Taille un peu plus grande */
+  margin-right: 5px;   /* Petit espace avant le label */
+}
+
+/* Le texte “Number of people who have accessed the site” */
+.counter-label {
+  font-size: 14px;    /* Ajuste comme tu veux */
+  color: #000;        /* Noir ou un gris pour contraster */
+}
+.search-wrapper {
+  position: relative;
+  /* ou place la comme tu veux, en flex/inline-block… */
+}
+
+.icon-action {
+  display: inline-flex;
+  align-items: center;
+  color: #9400D3; /* ou #fff, selon ton design */
+  text-decoration: none;
+  padding: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.icon-action i {
+  margin-right: 5px;
+}
+
+.icon-action:hover {
+  color: #BA55D3; /* Couleur plus claire au survol */
+}

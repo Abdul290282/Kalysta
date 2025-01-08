@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout - Payment</title>
+  <!-- Lien vers la feuille de style -->
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+  <div class="payment-container">
+
+    <!-- Message de confirmation (on l’affichera via JS) -->
+    <div class="confirmation-message" id="confirmationMessage">
+      Thanks for your purchase!
+    </div>
+
+    <!-- Logo Kalysta -->
+    <div class="payment-logo">
+      <img src="images/kalysta_logo.jpg" alt="Kalysta Logo">
+    </div>
+
+    <h2>Add a Credit or Debit Card</h2>
+
+    <form id="paymentForm">
+      <!-- Card Number (digits only) -->
+      <div class="form-group">
+        <label for="cardNumber">Card Number*</label>
+        <input 
+          type="text" 
+          id="cardNumber" 
+          name="cardNumber" 
+          required 
+          pattern="[0-9]{13,19}" 
+          placeholder="Enter your card number"
+          title="Please enter 13 to 19 digits"
+        />
+      </div>
+
+      <!-- Expiration + Security Code -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="expDate">Expiration (MM/YY)*</label>
+          <input 
+            type="text"
+            id="expDate"
+            name="expDate"
+            required
+            pattern="^(0[1-9]|1[0-2])\/\d{2}$"
+            placeholder="MM/YY"
+            title="Format MM/YY, ex: 04/25"
+          />
+        </div>
+        <div class="form-group">
+          <label for="cvv">Security Code (CVV)*</label>
+          <input 
+            type="text"
+            id="cvv"
+            name="cvv"
+            required
+            pattern="[0-9]{3,4}"
+            placeholder="3-4 digits"
+            title="3 or 4 digits"
+          />
+        </div>
+      </div>
+
+      <!-- Name on card (no special pattern enforced) -->
+      <div class="form-group">
+        <label for="cardName">Name on the card*</label>
+        <input 
+          type="text" 
+          id="cardName" 
+          name="cardName"
+          required
+          placeholder="First and last name"
+        />
+      </div>
+
+      <!-- Radio: save card info? -->
+      <div class="form-group">
+        <label>Save for future purchases?*</label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="saveCard" value="yes" required /> Yes
+          </label>
+          <label>
+            <input type="radio" name="saveCard" value="no" /> No
+          </label>
+        </div>
+      </div>
+
+      <!-- Bouton Buy -->
+      <button type="submit" class="buy-button">Buy</button>
+    </form>
+  </div>
+
+  <!-- Lien vers le script JS -->
+  <script src="checkout.js"></script>
+</body>
+</html>

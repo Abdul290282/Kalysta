@@ -1,0 +1,81 @@
+/* about.css */
+
+/* Fond noir global */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;  /* Fond noir */
+    font-family: Arial, sans-serif;
+    color: #fff;             /* Couleur de base (blanc) */
+  }
+  
+  /* Bouton "Back to Home" */
+  .back-to-home {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #9400D3; /* Violet futuriste */
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-home:hover {
+    background-color: #BA55D3; /* Violet plus clair au survol */
+  }
+  
+  /* En-tête */
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    color: #9400D3; /* Violet futuriste */
+    text-shadow: 0 0 10px #9400D3, 0 0 20px #BA55D3; /* Petit effet "néon" */
+  }
+  
+  /* Section principale "About" */
+  .about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap; /* Pour que l'image et le texte passent sous forme de colonnes sur grand écran */
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+  }
+  
+  /* Image du bras robotique */
+  .about-image img {
+    max-width: 600px; /* Ajuste la taille maximum */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(148, 0, 211, 0.7); /* Effet de brillance */
+  }
+  
+  /* Texte */
+  .about-text {
+    max-width: 600px;
+    line-height: 1.6; /* lisibilité */
+    color: #BA55D3;   /* Un violet plus clair pour le texte */
+  }
+  
+  /* Listes à puces */
+  .about-text ul {
+    list-style: disc inside;
+    margin-top: 10px;
+  }
+  
+  .about-text li {
+    margin-bottom: 5px;
+  }
+  

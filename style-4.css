@@ -1,0 +1,57 @@
+body {
+    background-color: #000; /* Fond noir */
+    color: #9400D3; /* Texte violet futuriste */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .details-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #product-image {
+    width: 70%; /* Taille ajustée */
+    max-height: 80%;
+    object-fit: contain;
+  }
+  
+  #description-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .description-text {
+    position: absolute;
+    color: #9400D3; /* Violet futuriste */
+    font-size: 18px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 10;
+  }
+  
+  .back-to-products {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    background-color: #9400D3;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 15;
+  }
+  
+  .back-to-products:hover {
+    background-color: #BA55D3;
+  }
+  

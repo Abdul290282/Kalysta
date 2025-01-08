@@ -1,0 +1,123 @@
+/* Remise à zéro */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corps de la page : noir + texte violet clair */
+  body {
+    background-color: #000; /* Fond noir */
+    color: #BA55D3;         /* Texte violet clair */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Bouton Back to Home */
+  .back-to-home {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #9400D3;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  .back-to-home:hover {
+    background-color: #BA55D3;
+  }
+  
+  /* En-tête */
+  .page-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .page-header h1 {
+    font-size: 2.5rem;
+    color: #9400D3;
+    text-shadow: 0 0 10px #BA55D3, 0 0 20px #8A2BE2;
+  }
+  
+  /* Section “Why Join Us?” */
+  .why-join-us {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    background-color: #111; /* Un noir plus clair */
+    border: 2px solid #9400D3;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(148, 0, 211, 0.5);
+  }
+  .why-join-us h2 {
+    font-size: 1.8rem;
+    color: #9400D3;
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px #BA55D3;
+  }
+  .why-join-us p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #fff; /* Contraste */
+  }
+  
+  /* Section du formulaire */
+  .application-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #111;
+    border: 2px solid #9400D3;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(148, 0, 211, 0.5);
+  }
+  .application-form h2 {
+    font-size: 1.8rem;
+    color: #9400D3;
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px #BA55D3;
+  }
+  
+  /* Groupes de champs */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #BA55D3;
+  }
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="file"],
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #BA55D3;
+    border-radius: 4px;
+    background-color: #222; /* Gris foncé */
+    color: #fff; /* Texte blanc */
+  }
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  /* Bouton de soumission */
+  button[type="submit"] {
+    background-color: #9400D3;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  button[type="submit"]:hover {
+    background-color: #BA55D3;
+    color: #000; /* Contraste pour le hover */
+  }
+  

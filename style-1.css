@@ -1,0 +1,215 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif; /* Police moderne et claire */
+  }
+  
+  /* Corps de la page */
+  body {
+    background-color: #000; /* Fond noir */
+    color: #9400D3; /* Texte violet futuriste */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* En-tête principal */
+  header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000; /* Noir légèrement plus clair */
+    border-bottom: 2px solid #9400D3; /* Ligne violette */
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 28px;
+    color: #9400D3;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #BA55D3, 0 0 20px #8A2BE2; /* Effet de brillance futuriste */
+  }
+  
+  /* Conteneur des produits */
+  main {
+    display: flex;
+    flex-wrap: wrap; /* Permet un retour à la ligne si nécessaire */
+    justify-content: space-between; /* Espacement entre les produits */
+    gap: 20px; /* Espacement entre les produits */
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  /* Style individuel pour chaque produit */
+  .product {
+    text-align: center;
+    background: #000; /* Fond noir légèrement éclairci */
+    border: 1px solid #9400D3; /* Bordure violette futuriste */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 15px;
+    width: 250px; /* Largeur fixe */
+    box-shadow: 0 4px 15px rgba(148, 0, 211, 0.5); /* Ombre violette brillante */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
+  }
+  
+  /* Effet au survol */
+  .product:hover {
+    transform: scale(1.05); /* Agrandit légèrement */
+    box-shadow: 0 8px 25px rgba(148, 0, 211, 0.8); /* Ombre plus marquée */
+  }
+  
+  /* Image des produits */
+  .product img {
+    width: 100%; /* Image occupe toute la largeur disponible */
+    height: auto; /* Respect des proportions */
+    border-radius: 4px; /* Coins arrondis */
+    margin-bottom: 10px;
+  }
+  
+  /* Titre des produits */
+  .product h2 {
+    font-size: 18px;
+    color: #9400D3; /* Texte violet futuriste */
+    margin: 10px 0;
+    text-shadow: 0 0 8px #BA55D3, 0 0 15px #8A2BE2; /* Brillance légère */
+  }
+  
+  /* Description des produits */
+  .product p {
+    font-size: 16px;
+    color: #DDA0DD; /* Texte légèrement gris-violet */
+    margin-bottom: 10px;
+  }
+/* Bouton "Accueil" */
+.back-to-home {
+    position: fixed; /* Position fixe pour rester visible */
+    top: 10px; /* Placement en haut */
+    left: 10px; /* Placement à l'extrême gauche */
+    padding: 10px 15px;
+    background-color: #9400D3; /* Fond violet */
+    color: #fff; /* Texte blanc */
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* S'assure que le bouton est au-dessus de tout */
+  }
+  
+  .back-to-home:hover {
+    background-color: #BA55D3; /* Violet plus clair au survol */
+  }
+/* Container des produits */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  /* Carte de produit */
+  .product-card {
+    background-color: #000; /* Fond noir */
+    color: #9400D3; /* Texte violet futuriste */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(148, 0, 211, 0.5);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05); /* Effet zoom au survol */
+  }
+  
+  /* Image de produit */
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Bouton Learn More */
+  .learn-more-button {
+    background-color: #9400D3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #BA55D3;
+  }
+  
+  /* Bouton Buy It */
+  .buy-button {
+    background-color: #9400D3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .buy-button:hover {
+    background-color: #BA55D3;
+  }
+  .cart-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .cart-actions button {
+    background-color: #9400D3;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart-actions button:hover {
+    background-color: #BA55D3;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espace entre les boutons */
+    margin-top: 10px;
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espace entre les boutons */
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #9400D3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto; /* Taille automatique pour s'adapter au texte */
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: #BA55D3;
+    text-decoration: underline; /* Souligner au survol */
+  }
+  

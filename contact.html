@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact KALYSTA</title>
+  <!-- Lien vers Font Awesome pour les icônes -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHq6K3ePTmQG1Yq6s4Cw5dVJ7pBc1+..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- Lien vers ta feuille de style -->
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <!-- Bouton "Back to Home" -->
+  <a href="kalysta_new_version.html" class="back-to-home">Back to Home</a>
+
+  <header>
+    <h1>Contact us</h1>
+  </header>
+
+  <!-- Bloc coordonnées -->
+  <section class="coordonnees">
+    <p>
+      <i class="fas fa-envelope"></i>
+      contact@kalysta.tech
+    </p>
+    <p>
+      <i class="fas fa-phone-alt"></i>
+      +33 1 69 47 06 95 / +33 1 69 47 06 97
+    </p>
+    <p>
+      <i class="fas fa-map-marker-alt"></i>
+      40 rue de pelvoux 91000 Evry Courcouronnes - France
+    </p>
+  </section>
+
+  <!-- Formulaire de contact -->
+  <section class="formulaire-contact">
+    <form id="contact-form" action="#" method="POST">
+      <div class="form-group">
+        <label for="nom">name :</label>
+        <input type="text" id="nom" name="nom" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">send</button>
+    </form>
+  </section>
+
+  <!-- Message de confirmation caché par défaut -->
+  <div id="confirmation-message">
+    <p>Your message has been sent. Kalysta will respond to you as soon as possible.</p>
+  </div>
+
+  <!-- Petit script JavaScript pour afficher le message -->
+  <script>
+    const contactForm = document.getElementById('contact-form');
+    const confirmationMessage = document.getElementById('confirmation-message');
+
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      // Empêche le rechargement automatique de la page
+
+      // Ici, on pourrait faire l’envoi réel vers un serveur
+      // Pour l’exemple, on se contente d’afficher le message
+      confirmationMessage.style.display = 'block';
+
+      // Optionnel : on peut vider le formulaire
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>

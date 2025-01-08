@@ -1,0 +1,121 @@
+/* contact.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;  /* Fond noir */
+    font-family: Arial, sans-serif;
+    color: #fff;             /* Couleur de base (blanc) */
+  }
+  
+  /* Bouton "Back to Home" */
+  .back-to-home {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #9400D3;  /* Violet futuriste */
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1000; /* pour qu'il soit au-dessus de tout */
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-home:hover {
+    background-color: #BA55D3; /* Violet plus clair au survol */
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Titre "Contactez-nous" en violet futuriste (#9400D3) */
+  header h1 {
+    font-size: 2em;
+    color: #9400D3; 
+    text-shadow: 0 0 10px #9400D3, 0 0 20px #BA55D3; 
+  }
+  
+  /* Bloc des coordonnées */
+  .coordonnees {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .coordonnees p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #BA55D3; /* Violet clair */
+  }
+  
+  .coordonnees i {
+    margin-right: 10px;
+    color: #9400D3;  /* Violet plus soutenu */
+  }
+  
+  /* Formulaire de contact */
+  .formulaire-contact {
+    margin: 0 auto 40px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #111; /* Noir un peu plus clair */
+    border: 1px solid #9400D3; /* Bordure violet futuriste */
+    border-radius: 8px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #BA55D3; /* Violet clair */
+    font-weight: bold;
+  }
+  
+  /* Champs de saisie et textarea */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #BA55D3;
+    border-radius: 4px;
+    background-color: #222; /* Gris/noir */
+    color: #BA55D3;         /* Texte violet clair */
+  }
+  
+  button[type="submit"] {
+    background-color: #9400D3; /* Fond violet */
+    color: #fff;              /* Texte blanc */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #BA55D3; /* Violet clair au survol */
+    color: #000;              /* Texte noir pour meilleur contraste */
+  }
+  
+  /* Message de confirmation caché par défaut */
+  #confirmation-message {
+    display: none; /* on l'affiche via JS après le submit */
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: #BA55D3; /* Violet clair */
+    border: 1px solid #9400D3;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #111;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  

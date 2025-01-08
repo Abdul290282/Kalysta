@@ -1,0 +1,54 @@
+body {
+    background-color: #1a1a2e; /* Fond noir futuriste */
+    color: #ffffff; /* Texte blanc pour un bon contraste */
+    font-family: 'Arial', sans-serif; /* Police moderne et lisible */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #7f00ff; /* Titres en violet néon */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.images {
+    display: flex; /* Met les images côte à côte */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    gap: 20px; /* Espacement entre les images */
+    justify-content: center; /* Centre les images horizontalement */
+    padding: 20px;
+    background: linear-gradient(135deg, #1a1a2e, #2b2b50); /* Fond dégradé noir/violet */
+    border-radius: 15px; /* Coins arrondis pour un look moderne */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8); /* Ombre subtile autour du conteneur */
+}
+
+.images img {
+    max-width: 300px; /* Limite la largeur des images */
+    width: 100%; /* S'adapte au conteneur */
+    height: auto; /* Garde les proportions de l'image */
+    border: 3px solid #7f00ff; /* Bordure violette néon */
+    border-radius: 12px; /* Coins arrondis pour un look futuriste */
+    box-shadow: 0 4px 12px rgba(127, 0, 255, 0.6); /* Ombre violette autour des images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet de zoom et d'ombre au survol */
+}
+
+.images img:hover {
+    transform: scale(1.08); /* Agrandit légèrement l'image au survol */
+    box-shadow: 0 8px 20px rgba(127, 0, 255, 0.8); /* Ombre plus lumineuse au survol */
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 10px 0;
+    text-align: center;
+    color: #7f00ff;
+    background: #0f0f1e;
+    border-top: 2px solid #7f00ff;
+}

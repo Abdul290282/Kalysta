@@ -1,0 +1,132 @@
+/* Centrer l'image et la grandir */
+.image-container {
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ramène le centre exact de l'image au centre de la page */
+    text-align: center;
+    background-color: #000; /* Fond noir */
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .image-container img {
+    width: 90%; /* Augmente la taille de l'image à 90% de la largeur de la fenêtre */
+    max-width: 1000px; /* Taille maximale augmentée */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 20px rgba(148, 0, 211, 0.7); /* Effet de brillance */
+  }
+  
+  
+  /* Description avec flèche */
+.arrow-description {
+    position: absolute;
+    display: none; /* Caché par défaut */
+    color: #9400D3; /* Texte violet futuriste */
+    font-size: 18px; /* Augmente la taille du texte */
+    font-weight: bold;
+    text-shadow: 0 0 5px #BA55D3, 0 0 10px #8A2BE2;
+  }
+  
+  /* Positionnement spécifique des descriptions */
+  #desc1 {
+    top: 30px; /* Ajusté selon votre image */
+    left: 10px; /* Ajusté pour la flèche de gauche */
+  }
+  
+  #desc2 {
+    top: 60px;
+    right: 20px;
+  }
+  
+  #desc3 {
+    top: 130px;
+    left: 15px;
+  }
+  
+  #desc4 {
+    top: 180px;
+    right: 25px;
+  }
+  
+  #desc5 {
+    bottom: 90px;
+    left: 40px;
+  }
+  
+  #desc6 {
+    bottom: 40px;
+    right: 35px;
+  }
+  
+  /* Flèches */
+  #desc1 .arrow {
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #9400D3 transparent transparent;
+  }
+  
+  #desc2 .arrow {
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #9400D3;
+  }
+  
+  #desc3 .arrow {
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #9400D3 transparent transparent;
+  }
+  
+  #desc4 .arrow {
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #9400D3;
+  }
+  
+  #desc5 .arrow {
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #9400D3 transparent transparent;
+  }
+  
+  #desc6 .arrow {
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #9400D3;
+  }
+/* Fond global noir et texte violet */
+body {
+    background-color: #000; /* Fond noir */
+    color: #9400D3; /* Texte violet futuriste */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #000; /* Fond noir */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #9400D3; /* Ligne violette */
+  }
+  
+  header h1 {
+    color: #9400D3; /* Texte violet */
+    text-shadow: 0 0 10px #BA55D3, 0 0 20px #8A2BE2; /* Effet de brillance */
+    font-size: 24px;
+  }
+  
+  header .back-to-products {
+    color: #fff; /* Texte blanc */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #9400D3; /* Fond violet */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  header .back-to-products:hover {
+    background-color: #BA55D3; /* Violet plus clair */
+    color: #fff;
+  }
+    
